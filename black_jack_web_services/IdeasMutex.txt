@@ -1,0 +1,12 @@
+Tenemos que hacer 2 mutex:
+Uno para el register que bloquee los datos de la partida mientras espera las 2 conexiones correspondientes.
+En cuanto esten los jugadores asignados a una partida la empieza.
+
+Otro en el status que gestiona los turnos de una forma parecida a el turnplay de sockets pero bloqueando
+las partes correspondientes.
+
+En resumen el servidor es un restaurante con x mesas y llegan y simios a comer, pues lo que hay que hacer es
+adjudicarles las mesas y decirles cuando hay que comer.
+
+Las variables condicion las generamos nosotros, esto puede ser mas sencillo
+Hay que hacer dos una para bloquear a todos los hilos cuando se registran y otro para los turnos
